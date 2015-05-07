@@ -1,0 +1,13 @@
+[% META title = 'Edit User' -%]
+    
+	<h2> Edit Data  </h2>
+
+    <form method="post" action="[% c.uri_for(c.controller.action_for('update'), [user.id]) %]">
+    <table>
+      <tr><td>Name:</td><td><input type="text" name="name" value ="[% user.name %]"></td></tr>
+      <tr><td>Password:</td><td><input type="password" name="password" value ="[% user.password %]"></td></tr>
+      <tr><td>Email:</td><td><input type="text" name="email" value ="[% user.email %]"></td></tr>
+    </table>
+    <input type="submit" name="Submit" value="Submit">
+    <input type="reset" name="Reset" value="Reset">
+    </form>
