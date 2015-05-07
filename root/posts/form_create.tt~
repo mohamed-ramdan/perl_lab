@@ -4,7 +4,7 @@
     <form method="post" action="[% c.uri_for('form_create_do') %]">
     <table>
       <tr><td>Title:</td><td><input type="text" name="title"></td></tr>
-	<td><input type="hidden" name="user_id" value="2"></td></tr>
+	<input type="hidden" name="user_id" value="[% c.user.id %]">
       <tr><td>Body:</td><td><textarea  name="body"></textarea></td></tr>
     </table>
     <input type="submit" name="Submit" value="Submit">
